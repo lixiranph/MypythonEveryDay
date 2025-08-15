@@ -1,0 +1,21 @@
+a={'name':'LXR','age':'30','job':'programmer'}
+#给字典新增键值对，如键已存在，覆盖原来的键值对，如不存在则新增
+a['address']='鸿博家园'
+a['age']=31
+print(a)
+#使用update()将新字典中所有的键值对全部添加到旧字典对象上，如key有重复，则直接覆盖
+a={'name':'LXR','age':'30','job':'programmer'}
+b={'name':'lrq','money':1000,'sex':'女'}
+a.update(b)
+print(a)
+#字典中元素的删除，可以使用del()方法，或者clear()删除所有的键值对;pop()删除指定键值对，并返回对应的值对象
+a={'name':'LXR','age':'30','job':'programmer'}
+del a['name']
+print(a)
+b=a.pop('age')
+print(b)
+#popitem()随机删除和返回该键值对，字典是无序的
+a={'name':'LXR','age':'30','job':'programmer'}
+print(a.popitem())
+print(a.popitem())
+print(a.popitem())

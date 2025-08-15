@@ -1,0 +1,11 @@
+'''
+字典是键值对，无序，可变序列
+'''
+a={'name':'LXR','age':'30','job':'programmer'}
+print(a['name'])
+print(a.get('age'))
+print(a.get('op','不存在'))
+print(a.items())
+print(a.keys())
+print(a.values())
+print(len(a))
