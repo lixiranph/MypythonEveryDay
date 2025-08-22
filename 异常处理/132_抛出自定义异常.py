@@ -11,7 +11,7 @@ class GenderException(Exception):
     def __init__(self, msg="性别只能设置为 '男' 或 '女'"):
         super().__init__(msg)   # 调用父类构造方法
         self.error_msg = msg
-
+#测试git commit
 
 class Student:
     def __init__(self, name, gender):
